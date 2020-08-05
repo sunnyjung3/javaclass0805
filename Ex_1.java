@@ -7,9 +7,10 @@ public class Ex_1 {
 
 		Scanner sc = new Scanner(System.in); 
 		
-		int[] ids = new int[10]; // 게시물 번호 저장소 [1,2,3]
-		String[] titles = new String[10]; // 게시물 제목 저장소[제목1,제목2,제목3]
-		String[] bodies = new String[10]; // 게시물 내용 저장소
+		int[] ids = new int[3]; // 게시물 번호 저장소 [1,2,3]
+		String[] titles = new String[3]; // 게시물 제목 저장소[제목1,제목2,제목3]
+		String[] bodies = new String[3]; // 게시물 내용 저장소
+		
 		int lastIndex = 0;// 가장마지막에 저장된 저장소 index
 		int lastId = 0;// 가장 마지막에 추가된 게시물의 게시물번호
 
@@ -40,6 +41,7 @@ public class Ex_1 {
 				bodies[lastIndex] = sc.nextLine();
 
 				lastIndex++;
+				
 
 			} else if(s.equals("list")) {
 
